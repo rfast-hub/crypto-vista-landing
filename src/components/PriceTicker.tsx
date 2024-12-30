@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 
 const mockPrices = [
-  { symbol: "BTC", price: "69,420.50", change: "+1.2%" },
-  { symbol: "ETH", price: "3,890.45", change: "+2.1%" },
-  { symbol: "BNB", price: "456.78", change: "-0.5%" },
-  { symbol: "SOL", price: "125.34", change: "+3.2%" },
-  { symbol: "XRP", price: "0.58", change: "+0.7%" },
+  { symbol: "BTC", price: "52,150.75", change: "+1.2%" },
+  { symbol: "ETH", price: "2,890.45", change: "+2.1%" },
+  { symbol: "BNB", price: "380.78", change: "-0.5%" },
+  { symbol: "SOL", price: "98.34", change: "+3.2%" },
+  { symbol: "XRP", price: "0.52", change: "+0.7%" },
 ];
 
 export const PriceTicker = () => {
