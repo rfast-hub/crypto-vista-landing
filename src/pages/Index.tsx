@@ -133,7 +133,6 @@ const Index = () => {
                   "API access",
                   "Dedicated support",
                 ]}
-                isPopular
               />
             </div>
           </div>
