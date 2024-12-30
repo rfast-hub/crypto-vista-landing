@@ -4,7 +4,6 @@ import { Bell, Brain, ChartLine, LineChart, Mail, MessagesSquare } from "lucide-
 import { FeatureCard } from "@/components/FeatureCard";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { PricingCard } from "@/components/PricingCard";
-import { Footer } from "@/components/sections/Footer";
 
 const features = [
   {
@@ -160,8 +159,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 };
