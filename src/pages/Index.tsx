@@ -1,4 +1,4 @@
-import { Bell, Brain, ChartLineUp, LineChart, Mail, MessagesSquare } from "lucide-react";
+import { Bell, Brain, ChartLine, LineChart, Mail, MessagesSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { PriceTicker } from "@/components/PriceTicker";
 import { FeatureCard } from "@/components/FeatureCard";
@@ -12,7 +12,7 @@ const features = [
     description: "Set custom alerts for price movements and never miss an opportunity.",
   },
   {
-    icon: ChartLineUp,
+    icon: ChartLine,
     title: "Real-time Data",
     description: "Access live market data and advanced charting tools.",
   },
