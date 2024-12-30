@@ -1,10 +1,10 @@
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/sections/Hero";
 import { Bell, Brain, ChartLine, LineChart, Mail, MessagesSquare } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { FeatureCard } from "@/components/FeatureCard";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { PricingCard } from "@/components/PricingCard";
+import { Footer } from "@/components/sections/Footer";
 
 const features = [
   {
@@ -161,50 +161,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-12 border-t border-muted">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <h3 className="font-bold mb-4">CryptoTrack</h3>
-              <p className="text-muted-foreground">Advanced cryptocurrency tracking with AI-powered insights.</p>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Features</h4>
-              <ul className="space-y-2 text-muted-foreground">
-                <li>Price Alerts</li>
-                <li>Real-time Data</li>
-                <li>AI Insights</li>
-                <li>Market Analysis</li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Company</h4>
-              <ul className="space-y-2 text-muted-foreground">
-                <li>About</li>
-                <li>Blog</li>
-                <li>Careers</li>
-                <li>Contact</li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Newsletter</h4>
-              <p className="text-muted-foreground mb-4">Subscribe for market updates and news.</p>
-              <div className="flex space-x-2">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="flex-1 px-4 py-2 bg-secondary/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                />
-                <Button>Subscribe</Button>
-              </div>
-            </div>
-          </div>
-          <div className="mt-12 pt-8 border-t border-muted text-center text-muted-foreground">
-            <p>&copy; 2024 CryptoTrack. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
