@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 
 const mockPrices = [
-  { symbol: "BTC", price: "43,567.89", change: "+2.3%" },
-  { symbol: "ETH", price: "2,890.12", change: "+1.7%" },
-  { symbol: "BNB", price: "312.45", change: "-0.8%" },
-  { symbol: "SOL", price: "98.76", change: "+4.2%" },
-  { symbol: "ADA", price: "1.23", change: "+0.5%" },
+  { symbol: "BTC", price: "69,420.50", change: "+1.2%" },
+  { symbol: "ETH", price: "3,890.45", change: "+2.1%" },
+  { symbol: "BNB", price: "456.78", change: "-0.5%" },
+  { symbol: "SOL", price: "125.34", change: "+3.2%" },
+  { symbol: "XRP", price: "0.58", change: "+0.7%" },
 ];
 
 export const PriceTicker = () => {
@@ -16,7 +16,9 @@ export const PriceTicker = () => {
       setPrices((current) =>
         current.map((price) => ({
           ...price,
-          price: (parseFloat(price.price.replace(",", "")) * (1 + (Math.random() - 0.5) * 0.001)).toFixed(2),
+          price: (parseFloat(price.price.replace(",", "")) * (1 + (Math.random() - 0.5) * 0.001))
+            .toFixed(2)
+            .replace(/\B(?=(\d{3})+(?!\d))/g, ","),
           change: `${Math.random() > 0.5 ? "+" : "-"}${(Math.random() * 5).toFixed(1)}%`,
         }))
       );
