@@ -1,6 +1,7 @@
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/sections/Hero";
 import { Bell, Brain, ChartLine, LineChart, Mail, MessagesSquare } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import { FeatureCard } from "@/components/FeatureCard";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { PricingCard } from "@/components/PricingCard";
