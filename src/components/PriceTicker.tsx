@@ -1,28 +1,50 @@
 import { useEffect, useState } from "react";
 
-const mockPrices = [
-  { symbol: "BTC", price: "52,150.75", change: "+1.2%" },
-  { symbol: "ETH", price: "2,890.45", change: "+2.1%" },
-  { symbol: "BNB", price: "380.78", change: "-0.5%" },
-  { symbol: "SOL", price: "98.34", change: "+3.2%" },
-  { symbol: "XRP", price: "0.52", change: "+0.7%" },
+type CryptoPrice = {
+  symbol: string;
+  price: string;
+  change: string;
+  id: string;
+};
+
+const initialPrices: CryptoPrice[] = [
+  { symbol: "BTC", price: "0", change: "0%", id: "bitcoin" },
+  { symbol: "ETH", price: "0", change: "0%", id: "ethereum" },
+  { symbol: "BNB", price: "0", change: "0%", id: "binancecoin" },
+  { symbol: "SOL", price: "0", change: "0%", id: "solana" },
+  { symbol: "XRP", price: "0", change: "0%", id: "ripple" },
 ];
 
 export const PriceTicker = () => {
-  const [prices, setPrices] = useState(mockPrices);
+  const [prices, setPrices] = useState(initialPrices);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setPrices((current) =>
-        current.map((price) => ({
-          ...price,
-          price: (parseFloat(price.price.replace(",", "")) * (1 + (Math.random() - 0.5) * 0.001))
-            .toFixed(2)
-            .replace(/\B(?=(\d{3})+(?!\d))/g, ","),
-          change: `${Math.random() > 0.5 ? "+" : "-"}${(Math.random() * 5).toFixed(1)}%`,
-        }))
-      );
-    }, 3000);
+    const fetchPrices = async () => {
+      try {
+        const ids = initialPrices.map(p => p.id).join(',');
+        const response = await fetch(
+          `https://api.coingecko.com/api/v3/simple/price?ids=${ids}&vs_currencies=usd&include_24hr_change=true`
+        );
+        const data = await response.json();
+        
+        setPrices(initialPrices.map(coin => ({
+          ...coin,
+          price: data[coin.id]?.usd.toLocaleString('en-US', { 
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2 
+          }) || "0",
+          change: `${data[coin.id]?.usd_24h_change >= 0 ? "+" : ""}${data[coin.id]?.usd_24h_change.toFixed(1)}%` || "0%"
+        })));
+      } catch (error) {
+        console.error("Error fetching crypto prices:", error);
+      }
+    };
+
+    // Fetch immediately
+    fetchPrices();
+
+    // Then fetch every 30 seconds (CoinGecko's rate limit is 10-30 calls/minute)
+    const interval = setInterval(fetchPrices, 30000);
 
     return () => clearInterval(interval);
   }, []);
