@@ -116,44 +116,24 @@ const Index = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12 gradient-text">
-            Choose Your Plan
+            Simple, Affordable Pricing
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="animate-fade-up" style={{ animationDelay: "0ms" }}>
+          <div className="max-w-md mx-auto">
+            <div className="animate-fade-up">
               <PricingCard
-                title="Basic"
-                price="Free"
+                title="All Access"
+                price="$8"
                 features={[
                   "Real-time market data",
-                  "Basic price alerts",
-                  "Limited market analysis",
-                  "Email notifications",
-                ]}
-              />
-            </div>
-            <div className="animate-fade-up" style={{ animationDelay: "200ms" }}>
-              <PricingCard
-                title="Pro"
-                price="$29"
-                features={[
                   "Advanced price alerts",
                   "Full market analysis",
                   "AI-powered insights",
                   "Priority notifications",
-                ]}
-                isPopular
-              />
-            </div>
-            <div className="animate-fade-up" style={{ animationDelay: "400ms" }}>
-              <PricingCard
-                title="Enterprise"
-                price="$99"
-                features={[
                   "Custom alert rules",
-                  "Advanced AI features",
                   "API access",
                   "Dedicated support",
                 ]}
+                isPopular
               />
             </div>
           </div>
