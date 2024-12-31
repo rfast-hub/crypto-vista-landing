@@ -4,6 +4,7 @@ import { Bell, Brain, ChartLine, LineChart, Mail, MessagesSquare } from "lucide-
 import { FeatureCard } from "@/components/FeatureCard";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { PricingCard } from "@/components/PricingCard";
+import { Contact } from "@/components/sections/Contact";
 
 const features = [
   {
@@ -138,6 +139,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Contact Section */}
+      <Contact />
     </div>
   );
 };
