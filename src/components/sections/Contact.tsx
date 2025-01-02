@@ -16,7 +16,7 @@ export const Contact = () => {
           </div>
           <div className="flex items-center justify-center space-x-4">
             <Phone className="h-6 w-6 text-primary" />
-            <a href="tel:+1-555-123-4567" className="text-lg hover:text-primary transition-colors">
+            <a href="tel:+15551234567" className="text-lg hover:text-primary transition-colors">
               +1 (555) 123-4567
             </a>
           </div>
