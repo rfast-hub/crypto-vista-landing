@@ -73,7 +73,7 @@ const Privacy = () => {
           <h2>10. Contact Us</h2>
           <p>If you have any questions about this Privacy Policy, please contact us:</p>
           <ul>
-            <li>By email: privacy@cryptotrack.org</li>
+            <li>Email: privacy@cryptotrack.org</li>
             <li>By visiting our website: https://cryptotrack.org/contact</li>
           </ul>
         </div>
