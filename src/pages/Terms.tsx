@@ -14,43 +14,135 @@ const Terms = () => {
           <p>By accessing and using CryptoTrack ("the Service"), you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you must not use our service.</p>
           
           <h2>2. Description of Service</h2>
-          <p>CryptoTrack provides cryptocurrency tracking, analysis, and monitoring services. Our platform offers real-time data, price alerts, AI-powered insights, and market analysis tools. We reserve the right to modify, suspend, or discontinue any aspect of the service at any time.</p>
+          <p>CryptoTrack provides cryptocurrency tracking, analysis, and monitoring services. Our platform offers:</p>
+          <ul>
+            <li>Real-time cryptocurrency price tracking and alerts</li>
+            <li>Portfolio management tools</li>
+            <li>Market analysis and trading insights</li>
+            <li>Customizable watchlists and notifications</li>
+            <li>Historical price data and charts</li>
+            <li>API access (for premium users)</li>
+          </ul>
+          <p>We reserve the right to modify, suspend, or discontinue any aspect of the service at any time.</p>
           
           <h2>3. User Accounts</h2>
-          <p>To access certain features of the Service, you must create an account. You are responsible for maintaining the confidentiality of your account information and for all activities that occur under your account. You must immediately notify us of any unauthorized use of your account.</p>
+          <p>To access certain features of the Service, you must create an account. When creating an account, you agree to:</p>
+          <ul>
+            <li>Provide accurate, current, and complete information</li>
+            <li>Maintain and update your account information</li>
+            <li>Keep your password secure and confidential</li>
+            <li>Accept responsibility for all activities under your account</li>
+            <li>Notify us immediately of any unauthorized use</li>
+          </ul>
           
           <h2>4. Subscription and Payments</h2>
-          <p>Some features of CryptoTrack require a paid subscription. By subscribing to our premium services, you agree to pay all fees in accordance with the pricing and payment terms presented to you for the subscription. All payments are non-refundable unless otherwise specified.</p>
+          <p>4.1. Subscription Tiers:</p>
+          <ul>
+            <li><strong>Free Tier:</strong> Basic tracking and analysis features</li>
+            <li><strong>Premium Tier:</strong> Advanced features, real-time alerts, and API access</li>
+            <li><strong>Enterprise Tier:</strong> Custom solutions for institutional clients</li>
+          </ul>
+          
+          <p>4.2. Payment Terms:</p>
+          <ul>
+            <li>All payments are processed securely through our payment providers</li>
+            <li>Subscriptions are billed in advance on a recurring basis</li>
+            <li>Prices are subject to change with 30 days notice</li>
+            <li>Refunds are processed according to our refund policy</li>
+          </ul>
           
           <h2>5. Data Usage and Privacy</h2>
-          <p>Your use of the Service is also governed by our Privacy Policy. By using CryptoTrack, you consent to the collection and use of information as detailed in our Privacy Policy.</p>
+          <p>Your use of the Service is governed by our Privacy Policy. We collect and process data in accordance with applicable data protection laws and our privacy commitments.</p>
           
           <h2>6. User Obligations</h2>
-          <p>You agree to use the Service only for lawful purposes and in accordance with these Terms. You must not:</p>
+          <p>When using our Service, you agree not to:</p>
           <ul>
-            <li>Use the service for any illegal activities</li>
-            <li>Attempt to gain unauthorized access to any part of the Service</li>
-            <li>Interfere with or disrupt the Service or servers</li>
-            <li>Share your account credentials with others</li>
+            <li>Violate any applicable laws or regulations</li>
+            <li>Infringe upon intellectual property rights</li>
+            <li>Attempt to gain unauthorized access to the Service</li>
+            <li>Use the Service for any illegal activities</li>
+            <li>Manipulate or disrupt the Service's functionality</li>
+            <li>Share account credentials with others</li>
+            <li>Upload malicious code or content</li>
+            <li>Engage in market manipulation or fraudulent activities</li>
           </ul>
           
           <h2>7. Intellectual Property</h2>
-          <p>All content, features, and functionality of the Service, including but not limited to text, graphics, logos, and software, are the exclusive property of CryptoTrack and are protected by international copyright, trademark, and other intellectual property laws.</p>
+          <p>7.1. Our Property:</p>
+          <ul>
+            <li>All content, features, and functionality are owned by CryptoTrack</li>
+            <li>Our trademarks, logos, and service marks are protected</li>
+            <li>The Service's software and code are proprietary</li>
+          </ul>
+          
+          <p>7.2. User Content:</p>
+          <ul>
+            <li>You retain rights to content you submit</li>
+            <li>You grant us a license to use and display your content</li>
+            <li>We may remove content that violates our terms</li>
+          </ul>
           
           <h2>8. Disclaimer of Warranties</h2>
-          <p>The Service is provided "as is" and "as available" without any warranties of any kind, either express or implied. We do not guarantee the accuracy, completeness, or usefulness of any information on the Service. Any reliance you place on such information is strictly at your own risk.</p>
+          <p>8.1. Service Warranty:</p>
+          <ul>
+            <li>The Service is provided "as is" without warranties</li>
+            <li>We do not guarantee continuous, uninterrupted service</li>
+            <li>Market data accuracy is subject to third-party providers</li>
+          </ul>
+          
+          <p>8.2. Investment Disclaimer:</p>
+          <ul>
+            <li>We do not provide financial advice</li>
+            <li>All investment decisions are your responsibility</li>
+            <li>Past performance does not guarantee future results</li>
+          </ul>
           
           <h2>9. Limitation of Liability</h2>
-          <p>In no event shall CryptoTrack be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the Service.</p>
+          <p>9.1. Liability Caps:</p>
+          <ul>
+            <li>Our liability is limited to subscription fees paid</li>
+            <li>We are not liable for indirect or consequential damages</li>
+            <li>Market losses are not our responsibility</li>
+          </ul>
           
-          <h2>10. Modifications to Terms</h2>
-          <p>We reserve the right to modify these Terms at any time. We will notify users of any material changes via email or through the Service. Your continued use of the Service after such modifications constitutes your acceptance of the updated Terms.</p>
+          <h2>10. Service Modifications</h2>
+          <p>We reserve the right to:</p>
+          <ul>
+            <li>Modify or discontinue features</li>
+            <li>Update pricing and subscription terms</li>
+            <li>Change service providers or technologies</li>
+            <li>Implement new policies or requirements</li>
+          </ul>
           
           <h2>11. Termination</h2>
-          <p>We may terminate or suspend your account and access to the Service immediately, without prior notice or liability, for any reason, including without limitation if you breach these Terms.</p>
+          <p>11.1. Account Termination:</p>
+          <ul>
+            <li>You may terminate your account at any time</li>
+            <li>We may terminate accounts for violations</li>
+            <li>Termination may result in data deletion</li>
+          </ul>
           
-          <h2>12. Governing Law</h2>
+          <h2>12. Dispute Resolution</h2>
+          <p>12.1. Resolution Process:</p>
+          <ul>
+            <li>Disputes will be resolved through arbitration</li>
+            <li>The arbitration will be conducted in English</li>
+            <li>The arbitration location will be determined by us</li>
+          </ul>
+          
+          <h2>13. Governing Law</h2>
           <p>These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which CryptoTrack is registered, without regard to its conflict of law provisions.</p>
+          
+          <h2>14. Changes to Terms</h2>
+          <p>We may update these Terms at any time. Changes will be effective upon posting to the Service. Your continued use of the Service after changes constitutes acceptance of the updated Terms.</p>
+          
+          <h2>15. Contact Information</h2>
+          <p>For questions about these Terms, please contact us at:</p>
+          <ul>
+            <li>Email: legal@cryptotrack.org</li>
+            <li>Address: [Company Address]</li>
+            <li>Phone: [Phone Number]</li>
+          </ul>
         </div>
       </div>
       <Footer />
