@@ -45,7 +45,7 @@ export const LegalSection = () => {
       <ul className="list-disc pl-6 mt-4">
         <li>Email: legal@cryptotrack.org</li>
         <li>Address: 1290 Wilson Road, Westchester, NY 10598</li>
-        <li>Phone: +1 (555) 123-4567</li>
+        <li>Phone: +1 (914) 584-7858</li>
         <li>Hours: Monday - Friday, 9:00 AM - 5:00 PM PST</li>
       </ul>
 
