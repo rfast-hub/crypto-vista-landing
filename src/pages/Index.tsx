@@ -5,6 +5,7 @@ import { FeatureCard } from "@/components/FeatureCard";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { PricingCard } from "@/components/PricingCard";
 import { Contact } from "@/components/sections/Contact";
+import { Footer } from "@/components/Footer";
 
 const features = [
   {
@@ -142,6 +143,9 @@ const Index = () => {
 
       {/* Contact Section */}
       <Contact />
+      
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
