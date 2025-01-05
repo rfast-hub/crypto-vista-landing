@@ -44,7 +44,7 @@ export const LegalSection = () => {
       <p>For questions about these Terms, please contact us:</p>
       <ul className="list-disc pl-6 mt-4">
         <li>Email: legal@cryptotrack.org</li>
-        <li>Address: 123 Market Street, Suite 100, San Francisco, CA 94105</li>
+        <li>Address: 1290 Wilson Road, San Francisco, CA 94105</li>
         <li>Phone: +1 (555) 123-4567</li>
         <li>Hours: Monday - Friday, 9:00 AM - 5:00 PM PST</li>
       </ul>
