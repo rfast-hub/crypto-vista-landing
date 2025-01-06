@@ -11,10 +11,10 @@ export const Hero = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h1 className="text-4xl lg:text-6xl font-bold mb-6 gradient-text animate-fade-up">
-            Track Crypto Markets with AI-Powered Insights
+            AI-Powered Crypto Tracking
           </h1>
           <p className="text-xl text-muted-foreground mb-8 animate-fade-up" style={{ animationDelay: "200ms" }}>
-            Get real-time alerts, advanced analytics, and AI predictions to stay ahead in the crypto market.
+            Real-time alerts and AI predictions for crypto traders.
           </p>
           <Button 
             size="lg" 
