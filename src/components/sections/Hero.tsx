@@ -2,6 +2,10 @@ import { Button } from "@/components/ui/button";
 import { PriceTicker } from "@/components/PriceTicker";
 
 export const Hero = () => {
+  const handleGetStarted = () => {
+    window.location.href = 'https://signup.cryptotrack.org';
+  };
+
   return (
     <section className="relative hero-gradient pt-32 pb-20 lg:py-32">
       <div className="container mx-auto px-4">
@@ -12,7 +16,12 @@ export const Hero = () => {
           <p className="text-xl text-muted-foreground mb-8 animate-fade-up" style={{ animationDelay: "200ms" }}>
             Get real-time alerts, advanced analytics, and AI predictions to stay ahead in the crypto market.
           </p>
-          <Button size="lg" className="animate-fade-up" style={{ animationDelay: "400ms" }}>
+          <Button 
+            size="lg" 
+            className="animate-fade-up" 
+            style={{ animationDelay: "400ms" }}
+            onClick={handleGetStarted}
+          >
             Get Started Free
           </Button>
         </div>
