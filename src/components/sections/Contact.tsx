@@ -10,8 +10,8 @@ export const Contact = () => {
         <div className="max-w-md mx-auto space-y-6">
           <div className="flex items-center justify-center space-x-4">
             <Mail className="h-6 w-6 text-primary" />
-            <a href="mailto:support@cryptovista.com" className="text-lg hover:text-primary transition-colors">
-              support@cryptovista.com
+            <a href="mailto:cryptotrack31@gmail.com" className="text-lg hover:text-primary transition-colors">
+              cryptotrack31@gmail.com
             </a>
           </div>
           <div className="flex items-center justify-center space-x-4">
