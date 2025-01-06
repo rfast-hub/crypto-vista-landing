@@ -69,7 +69,7 @@ export const LegalSection = () => {
       <h2 className="text-2xl font-bold mt-8 mb-4">16. Contact Information</h2>
       <p>For questions about these Terms, please contact us:</p>
       <ul className="list-disc pl-6 mt-4">
-        <li>Email: legal@cryptotrack.org</li>
+        <li>Email: cryptotrack31@gmail.com</li>
         <li>Address: 1290 Wilson Road, Westchester, NY 10598</li>
         <li>Phone: +1 (914)-584-7858</li>
         <li>Hours: Monday - Friday, 9:00 AM - 5:00 PM PST</li>
