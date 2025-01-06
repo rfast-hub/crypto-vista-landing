@@ -5,7 +5,6 @@ export const DataCollection = () => {
       <p className="font-semibold">1.1. Personal Information:</p>
       <ul className="list-disc pl-6 mt-4">
         <li>Full name, email address, and contact information</li>
-        <li>Billing and payment information, including credit card details and banking information</li>
         <li>Cryptocurrency wallet addresses and transaction history</li>
         <li>Account preferences and settings</li>
         <li>Communication preferences and history</li>
