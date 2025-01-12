@@ -9,6 +9,10 @@ interface PricingCardProps {
 }
 
 export const PricingCard = ({ title, price, features, isPopular }: PricingCardProps) => {
+  const handleGetStarted = () => {
+    window.location.href = 'https://signup.cryptotrack.org';
+  };
+
   return (
     <div className={`p-6 rounded-xl ${isPopular ? "bg-primary/20" : "bg-secondary/50"} backdrop-blur-sm card-hover relative`}>
       {isPopular && (
@@ -29,7 +33,11 @@ export const PricingCard = ({ title, price, features, isPopular }: PricingCardPr
           </li>
         ))}
       </ul>
-      <Button className="w-full" variant={isPopular ? "default" : "outline"}>
+      <Button 
+        className="w-full" 
+        variant={isPopular ? "default" : "outline"}
+        onClick={handleGetStarted}
+      >
         Get Started
       </Button>
     </div>
