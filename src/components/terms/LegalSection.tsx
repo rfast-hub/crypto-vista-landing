@@ -82,6 +82,34 @@ export const LegalSection = () => {
         <li>Electronic notices must be acknowledged to be valid</li>
         <li>Response time: within 5 business days</li>
       </ul>
+
+      <h2 className="text-2xl font-bold mt-8 mb-4">17. Force Majeure</h2>
+      <p>We shall not be liable for any failure or delay in performance due to circumstances beyond our reasonable control, including but not limited to:</p>
+      <ul className="list-disc pl-6 mt-4">
+        <li>Natural disasters or acts of God</li>
+        <li>War, terrorism, or civil unrest</li>
+        <li>Government actions or regulations</li>
+        <li>Network or power failures</li>
+        <li>Cyber attacks or security breaches</li>
+        <li>Pandemic or public health emergencies</li>
+      </ul>
+
+      <h2 className="text-2xl font-bold mt-8 mb-4">18. Severability</h2>
+      <p>If any provision of these Terms is found to be unenforceable:</p>
+      <ul className="list-disc pl-6 mt-4">
+        <li>The provision shall be modified to the minimum extent necessary</li>
+        <li>Remaining provisions shall continue in full force and effect</li>
+        <li>Invalid provisions shall be replaced with valid ones of similar intent</li>
+        <li>Unenforceability shall not affect other provisions</li>
+      </ul>
+
+      <h2 className="text-2xl font-bold mt-8 mb-4">19. Assignment</h2>
+      <ul className="list-disc pl-6 mt-4">
+        <li>We may assign our rights and obligations to any party at any time</li>
+        <li>Users may not assign their rights without our written consent</li>
+        <li>Any attempted assignment in violation is void</li>
+        <li>Terms bind successors and permitted assigns</li>
+      </ul>
     </div>
   );
 };

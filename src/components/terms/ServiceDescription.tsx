@@ -40,6 +40,25 @@ export const ServiceDescription = () => {
         <li>Pricing and subscription terms may be adjusted with 30 days notice</li>
         <li>API endpoints and documentation may be updated with appropriate deprecation notices</li>
       </ul>
+
+      <h2 className="text-2xl font-bold mt-8 mb-4">2.3. Service Limitations and Disclaimers:</h2>
+      <ul className="list-disc pl-6 mt-4">
+        <li>Data provided is for informational purposes only and should not be considered financial advice</li>
+        <li>We make no guarantees regarding the accuracy, completeness, or timeliness of data</li>
+        <li>Past performance does not guarantee future results</li>
+        <li>Users are solely responsible for their investment decisions</li>
+        <li>Service may be restricted in certain jurisdictions</li>
+        <li>We reserve the right to refuse service to anyone at our sole discretion</li>
+      </ul>
+
+      <h2 className="text-2xl font-bold mt-8 mb-4">2.4. Compliance Requirements:</h2>
+      <ul className="list-disc pl-6 mt-4">
+        <li>Users must comply with all applicable laws and regulations in their jurisdiction</li>
+        <li>Users are responsible for reporting and paying any applicable taxes</li>
+        <li>Users must not use the service for money laundering or other illegal activities</li>
+        <li>Users must not attempt to manipulate market data or engage in market manipulation</li>
+        <li>Users must not use automated systems or bots without explicit permission</li>
+      </ul>
     </div>
   );
 };
