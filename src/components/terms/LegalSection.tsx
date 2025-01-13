@@ -7,7 +7,7 @@ export const LegalSection = () => {
         <li>ALL disputes shall be resolved through binding arbitration</li>
         <li>Arbitration shall be conducted by JAMS under its Comprehensive Arbitration Rules</li>
         <li>The arbitration will be conducted in English</li>
-        <li>The arbitration location will be San Francisco, California</li>
+        <li>The arbitration location will be Westchester County, New York</li>
         <li>Each party shall bear its own costs of arbitration</li>
         <li>The arbitrator's decision shall be final and binding</li>
         <li>No right to appeal arbitration decisions</li>
@@ -26,14 +26,14 @@ export const LegalSection = () => {
       </ul>
 
       <h2 className="text-2xl font-bold mt-8 mb-4">13. Governing Law</h2>
-      <p>These Terms shall be governed by and construed in accordance with the laws of the State of California, United States, without regard to its conflict of law provisions. The application of the United Nations Convention on Contracts for the International Sale of Goods is expressly excluded.</p>
+      <p>These Terms shall be governed by and construed in accordance with the laws of the State of New York, United States, without regard to its conflict of law provisions. The application of the United Nations Convention on Contracts for the International Sale of Goods is expressly excluded.</p>
 
       <p className="mt-4">13.1. Jurisdiction:</p>
       <ul className="list-disc pl-6 mt-4">
-        <li>Courts of San Francisco County, California shall have non-exclusive jurisdiction</li>
+        <li>Courts of Westchester County, New York shall have non-exclusive jurisdiction</li>
         <li>You irrevocably waive any objection to jurisdiction and venue</li>
         <li>Emergency injunctive relief may be sought in any court</li>
-        <li>You consent to personal jurisdiction in California</li>
+        <li>You consent to personal jurisdiction in New York</li>
       </ul>
 
       <h2 className="text-2xl font-bold mt-8 mb-4">14. Limitation of Liability</h2>

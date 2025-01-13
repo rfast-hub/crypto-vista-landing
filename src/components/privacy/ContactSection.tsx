@@ -6,6 +6,7 @@ export const ContactSection = () => {
       <ul className="list-disc pl-6 mt-4">
         <li>Email: cryptotrack31@gmail.com</li>
         <li>By visiting our website: https://cryptotrack.org/contact</li>
+        <li>Address: 1290 Wilson Road, Westchester, NY 10598</li>
       </ul>
     </div>
   );
