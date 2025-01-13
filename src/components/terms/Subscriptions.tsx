@@ -56,11 +56,39 @@ export const Subscriptions = () => {
 
       <p className="font-semibold mt-4">4.4. Subscription Cancellation:</p>
       <ul className="list-disc pl-6 mt-4">
-        <li>Cancel anytime through account settings</li>
+        <li>Cancel anytime through account settings or by contacting support</li>
         <li>Access continues until end of billing period</li>
         <li>No partial refunds for early cancellation</li>
         <li>Data retention period: 30 days post-cancellation</li>
         <li>Reactivation may require new subscription</li>
+      </ul>
+
+      <p className="font-semibold mt-4">4.5. Cancellation Process:</p>
+      <ul className="list-disc pl-6 mt-4">
+        <li>Log into your account and navigate to Subscription Settings</li>
+        <li>Click on "Cancel Subscription" button</li>
+        <li>Select reason for cancellation (optional)</li>
+        <li>Confirm cancellation</li>
+        <li>Receive email confirmation of cancellation</li>
+      </ul>
+
+      <p className="font-semibold mt-4">4.6. Post-Cancellation Terms:</p>
+      <ul className="list-disc pl-6 mt-4">
+        <li>All premium features will be disabled at the end of billing period</li>
+        <li>Downloaded data and reports remain accessible for 30 days</li>
+        <li>Custom API keys will be deactivated</li>
+        <li>Saved preferences and settings will be retained for 90 days</li>
+        <li>Option to download account data before deletion</li>
+        <li>Recurring payments will be automatically stopped</li>
+      </ul>
+
+      <p className="font-semibold mt-4">4.7. Account Reactivation:</p>
+      <ul className="list-disc pl-6 mt-4">
+        <li>Reactivate within 90 days to restore previous settings</li>
+        <li>May be subject to current pricing and terms</li>
+        <li>Previous promotional rates may not apply</li>
+        <li>Some historical data may not be recoverable</li>
+        <li>New subscription agreement required</li>
       </ul>
     </div>
   );

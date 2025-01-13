@@ -5,8 +5,20 @@ import { ServiceDescription } from "@/components/terms/ServiceDescription";
 import { UserAccounts } from "@/components/terms/UserAccounts";
 import { Subscriptions } from "@/components/terms/Subscriptions";
 import { LegalSection } from "@/components/terms/LegalSection";
+import { Button } from "@/components/ui/button";
+import { useToast } from "@/components/ui/use-toast";
 
 const Terms = () => {
+  const { toast } = useToast();
+
+  const handleCancelSubscription = () => {
+    toast({
+      title: "Cancellation Request Received",
+      description: "Please check your email for further instructions on canceling your subscription.",
+      duration: 5000,
+    });
+  };
+
   return (
     <div className="min-h-screen">
       <Navigation />
@@ -88,6 +100,20 @@ const Terms = () => {
           </ul>
           
           <LegalSection />
+
+          <div className="mt-16 border-t border-muted pt-8">
+            <h2 className="text-2xl font-bold mb-4">Cancel Your Subscription</h2>
+            <p className="mb-6">
+              If you wish to cancel your subscription, click the button below. You will receive an email with detailed instructions on how to complete the cancellation process.
+            </p>
+            <Button 
+              variant="destructive"
+              onClick={handleCancelSubscription}
+              className="w-full md:w-auto"
+            >
+              Cancel My Subscription
+            </Button>
+          </div>
         </div>
       </div>
       <Footer />
