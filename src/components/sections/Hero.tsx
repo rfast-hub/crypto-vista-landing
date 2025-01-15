@@ -3,7 +3,8 @@ import { PriceTicker } from "@/components/PriceTicker";
 
 export const Hero = () => {
   const handleGetStarted = () => {
-    window.location.href = 'https://signup.cryptotrack.org';
+    // Using a relative URL instead of hardcoded domain
+    window.location.href = '/signup';
   };
 
   return (
