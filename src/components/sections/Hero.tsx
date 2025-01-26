@@ -22,7 +22,7 @@ export const Hero = () => {
             style={{ animationDelay: "400ms" }}
             onClick={handleGetStarted}
           >
-            Get Started Free
+            Get Started
           </Button>
         </div>
         <div className="animate-fade-up" style={{ animationDelay: "600ms" }}>
