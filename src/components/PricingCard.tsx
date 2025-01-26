@@ -21,10 +21,11 @@ export const PricingCard = ({ title, price, features, isPopular }: PricingCardPr
         </span>
       )}
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
-      <div className="mb-6">
+      <div className="mb-2">
         <span className="text-3xl font-bold">{price}</span>
         {price !== "Free" && <span className="text-muted-foreground">/month</span>}
       </div>
+      <p className="text-sm text-muted-foreground mb-6">7-day free trial</p>
       <ul className="space-y-3 mb-6">
         {features.map((feature, i) => (
           <li key={i} className="flex items-center space-x-3">
