@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 
 type CryptoPrice = {
@@ -17,14 +18,29 @@ const initialPrices: CryptoPrice[] = [
 
 export const PriceTicker = () => {
   const [prices, setPrices] = useState(initialPrices);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchPrices = async () => {
       try {
-        const ids = initialPrices.map(p => p.id).join(',');
+        setError(null);
         const response = await fetch(
-          `https://api.coingecko.com/api/v3/simple/price?ids=${ids}&vs_currencies=usd&include_24hr_change=true`
+          `https://api.coingecko.com/api/v3/simple/price?ids=${initialPrices.map(p => p.id).join(',')}&vs_currencies=usd&include_24hr_change=true`,
+          {
+            headers: {
+              'Accept': 'application/json',
+              'Cache-Control': 'no-cache'
+            },
+          }
         );
+        
+        if (!response.ok) {
+          if (response.status === 429) {
+            throw new Error("Rate limit exceeded. Please try again in a minute.");
+          }
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
         const data = await response.json();
         
         setPrices(initialPrices.map(coin => ({
@@ -37,6 +53,9 @@ export const PriceTicker = () => {
         })));
       } catch (error) {
         console.error("Error fetching crypto prices:", error);
+        setError(error instanceof Error ? error.message : "Failed to fetch prices");
+        // On error, retry after 5 seconds instead of the regular interval
+        setTimeout(fetchPrices, 5000);
       }
     };
 
@@ -48,6 +67,14 @@ export const PriceTicker = () => {
 
     return () => clearInterval(interval);
   }, []);
+
+  if (error) {
+    return (
+      <div className="w-full overflow-hidden bg-secondary/50 backdrop-blur-sm rounded-lg py-3 px-4 text-center text-red-400">
+        {error}
+      </div>
+    );
+  }
 
   return (
     <div className="w-full overflow-hidden bg-secondary/50 backdrop-blur-sm rounded-lg py-3">
